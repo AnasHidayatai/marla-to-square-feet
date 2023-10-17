@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form onsubmit="doSum(event)">
+    <h1>
+        Marla to Square feet
+    </h1>
+
+    Marla : <input id="Mar" type="Number" required step="0.1" >
+    <br>
+    <button>Convert</button>
+    <p id="result"></p>
+</form>
+    
+
+
+
+<script>
+function doSum(event){
+event.preventDefault();
+
+let Marla= document.querySelector("#Mar").value;
+
+console.log(Marla)
+
+let result= Number(Marla * 272.251 )
+
+let messege=`The Square feet is${result}`
+document.querySelector("#result") .innerHTML = messege
+
+
+
+}
+
+
+
+
+</script>
+
+
+
+
+
+    
+
+
+</body>
+</html>
